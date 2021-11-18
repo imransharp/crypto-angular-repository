@@ -31,12 +31,10 @@ let username, password;
 getuser().then(response =>{
    username = response[0]['Username']
    password = response[0]['pass']
-   
-
-
-    
-  
+     
 })
+
+
 signin.addEventListener('click',()=>
 {
     let lusername = (document.getElementById('Sign').value).toString()
@@ -52,8 +50,11 @@ let lpassword = (document.getElementById('Pass').value).toString()
         alert('Username or Password is Incorrect')
     }
 
+    
     var name = btoa(lusername);
     localStorage.setItem('_name', name);
+    let lusername = (document.getElementById('Sign').value).toString()
+   
     // document.querySelector('.user-welcome').innerHTML=lusername
     // export{lusername as us}
 })

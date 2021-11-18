@@ -5,11 +5,13 @@ import {HttpClient} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class LoginApiService {
 
   url='https://odiswap.io/WebApi/api/Registration';
   //url='https://odiswap.co.uk/WebApi/api/users'
-  urlToken='https://localhost:44303/api/Tokens'
+  //urlToken='https://localhost:44303/api/Tokens'
+  urlToken='https://odiswap.io/WebApi/api/Tokens'
 
   login_access:any;
   login_admin_access:any;
