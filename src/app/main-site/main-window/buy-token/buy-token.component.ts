@@ -51,52 +51,7 @@ export class BuyTokenComponent implements OnInit {
   constructor(private _obj: LoginApiService, private modalService: NgbModal, private http: HttpClient) { }
 
   ngOnInit() {
-  
-
   }
-
-  
-  // saveWallet() {
-  //       //debugger;
-  //   this.tokenId = this.tokenAddress;
-  //   this.http.get('https://deep-index.moralis.io/api/v2/0x7bA9a42bcB796cEF1e8cA72F29642594D9274279/balance?chain=bsc',
-  //     { 'headers': this.headers }
-  //   ).subscribe(data => {
-  //     //$scope.messages = JSON.parse(messages);
-  //     this.items = JSON.stringify(data);
-  //     //this.items = JSON.stringify(data);
-  //     console.log("Moralis Api result of call: " + this.items)
-  //   });
-
-  //   this._obj.SaveTokenData({
-  //     EmailId: 'imranb.bhatti@gmail.com',
-  //     WalletAddress: this.tokenAddress
-  //   }).subscribe(
-  //     data => {
-  //       console.log(data)
-  //     });
-
-  // }
-
-  // fetchWallet() {
-  //   // alert( 'Hello ' + '\nWelcome to C# Corner \nFunction in First Component'); 
-  //   //debugger;
-  //   this.tokenId = this.tokenAddress;
-
-  //   //https://deep-index.moralis.io/api/v2/0x246F4b668dd7fE55888EF50aF9F4aeF6C39d4Bdc/erc20?chain=bsc%20testnet
-
-  //   //for client wallet
-  //   //https://deep-index.moralis.io/api/v2/0x7bA9a42bcB796cEF1e8cA72F29642594D9274279/erc20?chain=bsc
-
-  //   //this.http.get('https://deep-index.moralis.io/api/v2/'+this.tokenId+'/erc20?chain=bsc%20testnet',
-  //   this.http.get('https://deep-index.moralis.io/api/v2/0x7bA9a42bcB796cEF1e8cA72F29642594D9274279/erc20?chain=bsc',
-  //     { 'headers': this.headers }
-  //   ).subscribe(data => {
-  //     this.items = data;
-  //     //this.items = this.records
-  //     console.log("records " + data)
-  //   });
-  // }
 
   fetchClientWallet() {
     this.tokenId = this.tokenAddress;
